@@ -18,7 +18,7 @@ int beautifulDays(int i, int j, int k) {
     int answer = 0;
     for (int n = i; n <= j; n++){
         if ((abs(n - reverseNum(n))) % k == 0){
-            // cout << reverseNum(i) << endl;
+            
             answer++;
         }
     }

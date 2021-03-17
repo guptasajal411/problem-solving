@@ -19,7 +19,7 @@ int simpleArraySum(vector<int> ar, int ar_count) {
 }
 
 int main()
-{
+
     ofstream fout(getenv("OUTPUT_PATH"));
 
     int ar_count;

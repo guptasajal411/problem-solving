@@ -1,36 +1,43 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-// Complete the superReducedString function below.
-string superReducedString(string s) {
-    for (int i = 0; i < s.length();){
-        if (s[i] == s[i + 1] && i > -1){
-            s.erase(i, 2);
-            i--;
-        }
-        else{
-            i++;
-        }
-    }
-    if (s.length() == 0){
-        return "Empty String";
-    }
-    return s;
-}
+// //array of objects
+// //  arr[20]
+// // array of class type is known as array of objects
 
-int main()
-{
-    ofstream fout(getenv("OUTPUT_PATH"));
 
-    string s;
-    getline(cin, s);
 
-    string result = superReducedString(s);
+// class sample{
+//     int x;
+//     public:
+//     void read(){
+//         x = 10;
+//         cout << "x is "<< x;
+//     }
+// };
+// class new{//container class: it is containing the object of another calass
+//     sample n1; //n1 is contained object|||| object for sample class as a pointer
+//     public:
+//     void fun(){
+//         n1.put();
+//     }
+// }
+int main(){
+    // new/ object // pbject os cpntainer pobject;
+    // cout << object.put
+    
+    // pointers store addresws of a local cariable..
+    int a = 10;
+    int *p; //pointer variable
+    
+    p = &a; //address of a is stored in pointer 
+    //ampersand of a is refernece variable a here
+    cout << a << endl;
+    cout << p << endl; //p stores adderss fo variable
+    cout << *p << endl; //defreference variable
+    cout << &a; //address variable
 
-    fout << result << "\n";
-
-    fout.close();
-
+    int
     return 0;
 }
